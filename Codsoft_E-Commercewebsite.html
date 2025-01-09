@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Simple E-Commerce Store</h1>
+        <div id="cart-info">
+            <button id="view-cart">View Cart (0)</button>
+        </div>
+    </header>
+
+    <section id="products">
+        <div class="product-card" data-id="1">
+            <img src="https://static.digit.in/Realme-13-Pro-Plus-5G-3.jpg" alt="Product 1">
+            <h2>Realme 13PRO PLUS</h2>
+            <p>1. Powerful Performance: The Realme 13 Pro Plus boasts a high-performance chipset, enabling smooth multitasking, efficient gaming, and a lag-free experience across apps and demanding tasks.<br>
+
+                2. Stunning Display: Featuring a 6.7-inch Super AMOLED display with a 120Hz refresh rate, it provides vibrant visuals, sharp details, and fluid motion, perfect for media consumption and gaming.<br>
+
+                3. Next-Level Photography: Equipped with a 108MP primary camera, the Realme 13 Pro Plus captures ultra-high-resolution photos with incredible clarity, while advanced AI optimizes each shot for professional-grade results.</p>
+            <p>Rs 35,000/-</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-id="2">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.0uUS6a3Q_0Vhub7qLULhlwHaHa?rs=1&pid=ImgDetMain" alt="Product 2">
+            <h2>Honor 90 5G</h2>
+            <p>1. 5G Connectivity: The Honor 90 5G provides ultra-fast download and streaming speeds, ensuring a seamless experience for gaming, video conferencing, and heavy data use with next-gen 5G technology.<br>
+
+                2. Brilliant Display: The 6.7-inch AMOLED display offers vibrant colors, deep blacks, and a smooth 120Hz refresh rate, making it ideal for immersive entertainment and gaming.<br>
+
+                3. Impressive Camera Array: Featuring a 200MP main camera, the Honor 90 5G delivers exceptional photo clarity and detail, combined with advanced AI to optimize shots in any lighting or scenario.</p>
+            <p>Rs 40,000/-</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-id="3">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.h6HKZkD0ou0jeBjAP8CiXAHaHa?w=167&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Product 3">
+            <h2>Motorola Edge 50 PRO FUSION</h2>
+            <p>1. Cutting-edge Performance: Powered by the latest Snapdragon chipset, the Motorola Edge 50 Pro Fusion delivers seamless multitasking, gaming, and heavy app usage with lightning-fast speed and responsiveness.<br>
+
+                2. Stunning Display: The 6.7-inch OLED display with a high refresh rate offers vibrant colors and ultra-smooth visuals, elevating every viewing experience for media consumption and gaming.<br>
+
+                3. Advanced Camera System: Equipped with a versatile multi-lens setup, the Edge 50 Pro Fusion excels at capturing professional-grade photos and videos in any lighting, featuring AI-driven enhancements for exceptional detail and clarity.</p>
+            <p>Rs 30,000/-</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+
+    <section id="cart" style="display: none;">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total-price">0.00</span></p>
+        <button id="checkout">Proceed to Checkout</button>
+        <button id="back-to-shop">Back to Shop</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
